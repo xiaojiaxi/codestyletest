@@ -55,7 +55,7 @@
 #pragma mark - LVKeyboardDelegate
 - (void)keyboard:(LVKeyboardView *)keyboard didClickButton:(UIButton *)button {
     
-    if (self.passWord.length > 5) return;
+    if (self.passWord.length    > 5) return;
     [self.passWord appendString:button.currentTitle];
     
     self.textField.text = self.passWord;
